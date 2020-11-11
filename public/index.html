@@ -19,16 +19,15 @@
 <link rel="stylesheet" type="text/css" href="styles/framework.css">
   <link rel="manifest" href="_manifest.json" data-pwa-version="set_by_pwa.js">
   <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
-<!-- PushAlert -->
-        <script type="text/javascript">
-                (function(d, t) {
-                        var g = d.createElement(t),
-                        s = d.getElementsByTagName(t)[0];
-                        g.src = "https://cdn.pushalert.co/integrate_1fbbc1a3f44f36f61f566a6470d75c58.js";
-                        s.parentNode.insertBefore(g, s);
-                }(document, "script"));
-        </script>
-        <!-- End PushAlert -->
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "f0e3a5e0-e6d6-4f21-a1ff-6473647f3443",
+    });
+  });
+</script>
 <script>
 // Retrieve Firebase Messaging object.
 const messaging = firebase.messaging();
