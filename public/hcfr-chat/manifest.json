@@ -1,0 +1,9 @@
+{
+  "name": "HCFR Chat",
+  "short_name": "HCFR Chat",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "gcm_sender_id": "77881030995"
+
+}
