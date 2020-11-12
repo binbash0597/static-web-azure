@@ -12,10 +12,10 @@
       "route": "/api/",
       "allowedRoles": ["administrator"]
     },
-    {
-      "route": "/login",
-      "serve": "/index.html"
-    },
+{
+  "route": "/login",
+  "serve": "/.auth/login/google"
+},
     {
       "route": "/logout",
       "serve": "/login.html"
