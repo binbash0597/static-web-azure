@@ -13,8 +13,8 @@
       "allowedRoles": ["administrator"]
     },
 {
-  "route": "/login",
-  "serve": "/.auth/login/google"
+  "route": "/login/*",
+  "serve": "/index.html"
 },
     {
       "route": "/logout",
